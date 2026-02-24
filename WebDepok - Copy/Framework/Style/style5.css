@@ -1,0 +1,161 @@
+body {
+    background-color: #F9A21B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1f2f8a;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    transition: transform 0.35s ease, box-shadow 0.3s ease;
+}
+
+/* sembunyi */
+.navbar.hide {
+    transform: translateY(-100%);
+}
+
+/* pas ada scroll */
+.navbar.scrolled {
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+.navbar h2 {
+    color: #F9A21B;
+    margin-right: auto;
+    text-shadow: black 4px 4px 4px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    /* logo kosong */
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar nav a {
+    color: #F9A21B;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    text-shadow: black 4px 4px 4px
+}
+
+.content-wrapper {
+    padding: 100px;
+    background: #F9A21B;
+}
+
+/* CARD UTAMA */
+.content-card {
+    background: #F9A21B;
+    border: 5px solid black;
+    box-shadow: black 12px 12px 0;
+    padding: 35px;
+    max-width: 1000px;
+    margin: auto;
+
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* JUDUL */
+.card-title {
+    background: black;
+    color: #F9A21B;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+/* IMAGE */
+.main-image {
+    width: 100%;
+    border: 5px solid black;
+    box-shadow: black 10px 10px 0;
+    margin-bottom: 30px;
+}
+
+/* SECTION */
+.section {
+    margin-bottom: 35px;
+}
+
+.section h3 {
+    background: black;
+    color: #F9A21B;
+    padding: 8px 18px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.section p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.section ul,
+.section ol {
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 6px;
+}
+
+/* LOKASI */
+.location {
+    border-top: 4px solid black;
+    padding-top: 25px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    background: black;
+    color: #F9A21B;
+    padding: 10px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* ANIMASI */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* FOOTER */
+footer {
+    background: #1f2f8a;
+    color: #f9b233;
+    text-align: center;
+    padding: 15px;
+}

@@ -1,0 +1,124 @@
+body {
+    background-color: #F9A21B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #1f2f8a;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.navbar h2 {
+    color: #F9A21B;
+    margin-right: auto;
+    text-shadow: black 4px 4px 4px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    /* logo kosong */
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.navbar nav a {
+    color: #F9A21B;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    text-shadow: black 4px 4px 4px;
+}
+
+body {
+    background: #F9A21B;
+    font-family: Arial, sans-serif;
+}
+
+/* WRAPPER TENGAH */
+.service-wrapper {
+    height: 85.2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fade-wrapper {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* CARD */
+.service-card {
+    background: #2f3590;
+    color: #ffb020;
+    width: 520px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: black 14px 14px 0;
+}
+
+
+.hover-3d {
+    transition: transform 0.15s ease-out;
+    transform-style: preserve-3d;
+}
+
+.service-card h2 {
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* TOMBOL WA */
+.wa-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+    width: 200px;
+    height: 80px;
+
+    text-decoration: none;
+    background: #ffb020;
+    color: #1f2f8a;
+    border-radius: 40px;
+}
+
+/* FOOTER */
+footer {
+    background: #1f2f8a;
+    color: #f9b233;
+    text-align: center;
+    padding: 15px;
+}
